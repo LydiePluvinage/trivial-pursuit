@@ -1,0 +1,21 @@
+.game {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  align-items: center;
+}
+
+.game__question {
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+
+.game__answer {
+  list-style-type: none;
+  width: 200px;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background-color: blueviolet;
+  color: white;
+}

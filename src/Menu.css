@@ -1,0 +1,13 @@
+.menu__list {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+}
+
+.menu {
+  font-size: 12px;
+  padding: 10px 20px;
+  background-color: green;
+  border-radius: 10px;
+  margin-right: 20px;
+}
