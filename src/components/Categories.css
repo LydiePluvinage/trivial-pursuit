@@ -1,0 +1,24 @@
+.header__logo {
+  height: 60px;
+  pointer-events: none;
+}
+
+.header {
+  background-color: #282c34;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 600px;
+}
+
+h1 {
+  font-size: 18px;
+}
