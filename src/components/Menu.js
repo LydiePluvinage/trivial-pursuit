@@ -3,8 +3,9 @@ import './Menu.css';
 function Menu() {
   return (
     <ul className="menu__list">
-      <li className="menu">Jouer</li>
-      <li className="menu">Classement</li>
+      <a href="\">
+        <li className="menu">Jouer</li>
+      </a>
     </ul>
   );
 }

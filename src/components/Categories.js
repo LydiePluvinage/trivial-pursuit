@@ -22,10 +22,12 @@ const Categories = () => {
     <div className="categories">
       <ul className="categories__content">
         {CategoriesList.map((category) => (
-          <NavLink key={category.id} to={'/category/' + category.id}>
-            <li key={category.id} className="categories__link">
-              {category.name}
-            </li>
+          <NavLink
+            className="categories__link"
+            key={category.id}
+            to={'/category/' + category.id}
+          >
+            <li key={category.id}>{category.name}</li>
           </NavLink>
         ))}
       </ul>
