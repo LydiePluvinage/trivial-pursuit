@@ -1,24 +1,30 @@
-.header__logo {
-  height: 60px;
-  pointer-events: none;
+.categories__content {
+  display: grid;
+  grid-template: auto / repeat(5, 1fr);
+  width: 600px;
+  padding-top: 30px;
+  text-decoration: none;
 }
 
-.header {
-  background-color: #282c34;
-  height: 10vh;
+.categories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.categories__link {
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 10px;
+  border: blueviolet 1px solid;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
-}
-
-.header__content {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 600px;
-}
-
-h1 {
-  font-size: 18px;
+  color: blueviolet;
+  font-size: 12px;
+  list-style-type: none;
+  text-decoration: none;
 }

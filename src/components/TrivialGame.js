@@ -2,15 +2,18 @@ import axios from 'axios';
 import './TrivialGame.css';
 import TrivialQuestion from './TrivialQuestion';
 import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router';
 
 const TrivialGame = () => {
+  const { category } = useParams();
+  console.log('category:', category);
   const [questions, setQuestions] = useState([]);
 
   useEffect(() => {
     // fetches questions from Trivial Pursuit API and stores them in questions state for display
     const getQuestions = async () => {
       const results = await axios.get(
-        'https://opentdb.com/api.php?amount=10&category=17&type=multiple'
+        `https://opentdb.com/api.php?amount=10&category=${category}&type=multiple`
       );
       let questionsList = [];
       questionsList.push(
@@ -53,17 +56,17 @@ const TrivialGame = () => {
     };
 
     getQuestions();
-  }, []);
+  }, [category]);
 
   return (
-    <>
+    <div>
       {questions.map((question) => (
         <TrivialQuestion
           question={question.question}
           answers={question.answers}
         />
       ))}
-    </>
+    </div>
   );
 };
 
