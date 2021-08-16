@@ -6,14 +6,14 @@ import { useParams } from 'react-router';
 
 const TrivialGame = () => {
   const { category } = useParams();
-  console.log('category:', category);
+  const { difficulty } = useParams();
   const [questions, setQuestions] = useState([]);
 
   useEffect(() => {
     // fetches questions from Trivial Pursuit API and stores them in questions state for display
     const getQuestions = async () => {
       const results = await axios.get(
-        `https://opentdb.com/api.php?amount=10&category=${category}&type=multiple`
+        `https://opentdb.com/api.php?amount=10&category=${category}&type=multiple&difficulty=${difficulty}`
       );
       let questionsList = [];
       questionsList.push(
@@ -31,12 +31,10 @@ const TrivialGame = () => {
           for (var i = 0; i < myresult.incorrect_answers.length; i++) {
             answers.push({ text: myresult.incorrect_answers[i] });
           }
-          console.log(answers);
+
           shuffleArray(answers);
-          console.log(answers);
 
           question.answers = answers;
-          console.log(question.answers);
 
           return question;
         })
