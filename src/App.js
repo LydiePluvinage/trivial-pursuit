@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import TrivialGame from './components/TrivialGame';
-import Categories from './components/Categories';
 import Header from './components/Header';
 import './App.css';
+import GameSelection from './components/GameSelection';
 
 function App() {
   return (
@@ -11,11 +11,14 @@ function App() {
       <main className="App__main">
         <Router>
           <Switch>
+            <Route path="/category/:category/difficulty/:difficulty">
+              <TrivialGame />
+            </Route>
             <Route path="/category/:category">
               <TrivialGame />
             </Route>
             <Route path="/">
-              <Categories />
+              <GameSelection />
             </Route>
           </Switch>
         </Router>

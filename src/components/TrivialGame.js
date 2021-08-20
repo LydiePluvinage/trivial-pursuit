@@ -12,6 +12,7 @@ const TrivialGame = () => {
   useEffect(() => {
     // fetches questions from Trivial Pursuit API and stores them in questions state for display
     const getQuestions = async () => {
+      console.log(difficulty);
       const results = await axios.get(
         `https://opentdb.com/api.php?amount=10&category=${category}&type=multiple&difficulty=${difficulty}`
       );
@@ -20,16 +21,30 @@ const TrivialGame = () => {
         results.data.results.map((myresult) => {
           let answers;
 
+          const parser = new DOMParser();
+
           const question = {
             category: myresult.category,
-            question: myresult.question,
+            question: parser.parseFromString(myresult.question, 'text/html')
+              .documentElement.textContent, // parse questions to display html characters
           };
 
-          answers = [{ text: myresult.correct_answer, correct: true }];
+          answers = [
+            {
+              text: parser.parseFromString(myresult.correct_answer, 'text/html')
+                .documentElement.textContent,
+              correct: true,
+            },
+          ];
 
           //add incorrect questions and shuffle
           for (var i = 0; i < myresult.incorrect_answers.length; i++) {
-            answers.push({ text: myresult.incorrect_answers[i] });
+            answers.push({
+              text: parser.parseFromString(
+                myresult.incorrect_answers[i],
+                'text/html'
+              ).documentElement.textContent,
+            });
           }
 
           shuffleArray(answers);
@@ -44,7 +59,6 @@ const TrivialGame = () => {
 
     //shuffles the array of answers
     const shuffleArray = (array) => {
-      console.log(array);
       for (var i = array.length - 1; i > 0; i--) {
         var j = Math.floor(Math.random() * (i + 1));
         var temp = array[i];
@@ -54,14 +68,16 @@ const TrivialGame = () => {
     };
 
     getQuestions();
-  }, [category]);
+  }, [category, difficulty]);
 
+  let i = 0;
   return (
     <div>
       {questions.map((question) => (
         <TrivialQuestion
           question={question.question}
           answers={question.answers}
+          key={i++}
         />
       ))}
     </div>
