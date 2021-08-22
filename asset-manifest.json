@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/trivial-pursuit/static/css/main.ab388fc1.chunk.css",
-    "main.js": "/trivial-pursuit/static/js/main.977341ec.chunk.js",
-    "main.js.map": "/trivial-pursuit/static/js/main.977341ec.chunk.js.map",
+    "main.js": "/trivial-pursuit/static/js/main.cb562645.chunk.js",
+    "main.js.map": "/trivial-pursuit/static/js/main.cb562645.chunk.js.map",
     "runtime-main.js": "/trivial-pursuit/static/js/runtime-main.053ad87f.js",
     "runtime-main.js.map": "/trivial-pursuit/static/js/runtime-main.053ad87f.js.map",
     "static/js/2.ce0bd60c.chunk.js": "/trivial-pursuit/static/js/2.ce0bd60c.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.053ad87f.js",
     "static/js/2.ce0bd60c.chunk.js",
     "static/css/main.ab388fc1.chunk.css",
-    "static/js/main.977341ec.chunk.js"
+    "static/js/main.cb562645.chunk.js"
   ]
 }
