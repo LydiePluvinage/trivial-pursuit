@@ -5,11 +5,11 @@
 }
 
 .menu {
-  font-size: 12px;
-  padding: 10px 20px;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
   background-color: green;
-  border-radius: 10px;
-  margin-right: 20px;
+  border-radius: 1rem;
+  margin-right: 2rem;
   text-decoration: none;
   color: white;
 }

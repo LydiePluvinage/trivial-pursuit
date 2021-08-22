@@ -1,5 +1,5 @@
 .header__logo {
-  height: 60px;
+  height: 6rem;
   pointer-events: none;
 }
 
@@ -16,9 +16,9 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 600px;
+  width: 60rem;
 }
 
 h1 {
-  font-size: 18px;
+  font-size: 1.8rem;
 }

@@ -1,8 +1,26 @@
 .categories__content {
   display: grid;
   grid-template: auto / repeat(5, 1fr);
-  width: 600px;
-  padding: 10px 0 0 0;
+  width: 60rem;
+  padding: 1rem 0 0 0;
+}
+
+@media only screen and (max-width: 630px) {
+  .categories__content {
+    font-size: 75%;
+    width: 50rem;
+    padding: 0.7rem 0 0 0;
+    grid-template: auto / repeat(4, 1fr);
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .categories__content {
+    font-size: 60%;
+    width: 400rem;
+    padding: 0.7rem 0 0 0;
+    grid-template: auto / repeat(3, 1fr);
+  }
 }
 
 .categories {
@@ -12,40 +30,19 @@
 }
 
 .categories__link {
-  height: 100px;
-  width: 100px;
-  margin: 5px;
+  height: 10rem;
+  width: 10rem;
+  margin: 0.5rem;
   cursor: pointer;
   background-color: white;
-  border-radius: 20px;
+  border-radius: 2rem;
   border: blueviolet 1px solid;
   display: flex;
   align-items: center;
   justify-content: center;
+  justify-self: center;
   color: blueviolet;
-  font-size: 12px;
+  font-size: 1.2rem;
   list-style-type: none;
   text-decoration: none;
-}
-
-.difficulty {
-  display: flex;
-  justify-content: center;
-  margin: 20px 0px;
-}
-
-.difficulty__content {
-  width: 600px;
-}
-
-.difficulty__button {
-  width: 80px;
-  height: 30px;
-  border-radius: 30px;
-  border: none;
-  background-color: red;
-  font-size: 14px;
-  color: white;
-  margin: 10px;
-  cursor: pointer;
 }
