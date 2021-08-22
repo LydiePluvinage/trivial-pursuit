@@ -11,13 +11,13 @@ function App() {
       <main className="App__main">
         <Router>
           <Switch>
-            <Route path="/category/:category/difficulty/:difficulty">
+            <Route path="/trivial-pursuit/category/:category/difficulty/:difficulty">
               <TrivialGame />
             </Route>
-            <Route path="/category/:category">
+            <Route path="/trivial-pursuit/category/:category">
               <TrivialGame />
             </Route>
-            <Route path="/">
+            <Route path="/trivial-pursuit">
               <GameSelection />
             </Route>
           </Switch>

@@ -12,7 +12,6 @@ const TrivialGame = () => {
   useEffect(() => {
     // fetches questions from Trivial Pursuit API and stores them in questions state for display
     const getQuestions = async () => {
-      console.log(difficulty);
       const results = await axios.get(
         `https://opentdb.com/api.php?amount=10&category=${category}&type=multiple&difficulty=${difficulty}`
       );
