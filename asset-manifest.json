@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.ab388fc1.chunk.css",
-    "main.js": "/static/js/main.f4a0ad4d.chunk.js",
-    "main.js.map": "/static/js/main.f4a0ad4d.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.cc242e3e.js",
-    "runtime-main.js.map": "/static/js/runtime-main.cc242e3e.js.map",
-    "static/js/2.ce0bd60c.chunk.js": "/static/js/2.ce0bd60c.chunk.js",
-    "static/js/2.ce0bd60c.chunk.js.map": "/static/js/2.ce0bd60c.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.ab388fc1.chunk.css.map": "/static/css/main.ab388fc1.chunk.css.map",
-    "static/js/2.ce0bd60c.chunk.js.LICENSE.txt": "/static/js/2.ce0bd60c.chunk.js.LICENSE.txt"
+    "main.css": "/trivial-pursuit/static/css/main.ab388fc1.chunk.css",
+    "main.js": "/trivial-pursuit/static/js/main.f4a0ad4d.chunk.js",
+    "main.js.map": "/trivial-pursuit/static/js/main.f4a0ad4d.chunk.js.map",
+    "runtime-main.js": "/trivial-pursuit/static/js/runtime-main.053ad87f.js",
+    "runtime-main.js.map": "/trivial-pursuit/static/js/runtime-main.053ad87f.js.map",
+    "static/js/2.ce0bd60c.chunk.js": "/trivial-pursuit/static/js/2.ce0bd60c.chunk.js",
+    "static/js/2.ce0bd60c.chunk.js.map": "/trivial-pursuit/static/js/2.ce0bd60c.chunk.js.map",
+    "index.html": "/trivial-pursuit/index.html",
+    "static/css/main.ab388fc1.chunk.css.map": "/trivial-pursuit/static/css/main.ab388fc1.chunk.css.map",
+    "static/js/2.ce0bd60c.chunk.js.LICENSE.txt": "/trivial-pursuit/static/js/2.ce0bd60c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.cc242e3e.js",
+    "static/js/runtime-main.053ad87f.js",
     "static/js/2.ce0bd60c.chunk.js",
     "static/css/main.ab388fc1.chunk.css",
     "static/js/main.f4a0ad4d.chunk.js"
