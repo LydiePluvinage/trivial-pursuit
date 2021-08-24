@@ -17,7 +17,11 @@ function App() {
             <Route path="/trivial-pursuit/category/:category">
               <TrivialGame />
             </Route>
-            <Route path="/trivial-pursuit">
+            <Route
+              exact
+              path="/trivial-pursuit"
+              basename={'/' + process.env.PUBLIC_URL}
+            >
               <GameSelection />
             </Route>
           </Switch>
