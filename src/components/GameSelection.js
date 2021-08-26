@@ -33,10 +33,7 @@ const GameSelection = () => {
               className="categories__link"
               key={category.id}
               to={
-                '/trivial-pursuit/category/' +
-                category.id +
-                '/difficulty/' +
-                difficultyChosen
+                '/category/' + category.id + '/difficulty/' + difficultyChosen
               }
             >
               <li key={category.id}>{category.name}</li>

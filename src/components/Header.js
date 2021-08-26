@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header className="header">
       <div className="header__content">
-        <a href="/trivial-pursuit/">
+        <a href="/">
           <img
             src="/trivial-pursuit/logo200.png"
             className="header__logo"

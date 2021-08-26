@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import TrivialGame from './components/TrivialGame';
 import Header from './components/Header';
 import './App.css';
@@ -9,19 +9,15 @@ function App() {
     <div className="App">
       <Header />
       <main className="App__main">
-        <Router>
+        <Router basename="/">
           <Switch>
-            <Route path="/trivial-pursuit/category/:category/difficulty/:difficulty">
+            <Route path="/category/:category/difficulty/:difficulty">
               <TrivialGame />
             </Route>
-            <Route path="/trivial-pursuit/category/:category">
+            <Route path="/category/:category">
               <TrivialGame />
             </Route>
-            <Route
-              exact
-              path="/trivial-pursuit"
-              basename={'/' + process.env.PUBLIC_URL}
-            >
+            <Route exact path="/">
               <GameSelection />
             </Route>
           </Switch>
