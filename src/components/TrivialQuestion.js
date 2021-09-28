@@ -7,7 +7,7 @@ const TrivialQuestion = (props) => {
   function styleAnswer(correctAnswer) {
     return answerGiven
       ? correctAnswer
-        ? { backgroundColor: 'green' }
+        ? { backgroundColor: 'pink' }
         : { backgroundColor: 'red' }
       : { backgroundColor: 'blueviolet' };
   }
